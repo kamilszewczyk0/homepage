@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navigation-bar">
+        <ul class="navigation-list">
+          <li class="navigation-list__item">
+            <a href="#hero" class="navigation-list__link">
+              O mnie
+            </a>
+          </li>
+          <li class="navigation-list__item">
+            <a href="#tabell" class="navigation-list__link">
+              Tabela
+            </a>
+          </li>
+          <li class="navigation-list__item">
+            <a href="#contact" class="navigation-list__link">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <section id="hero" class="hero">
+        <div class="hero__img-container">
+          <img
+            class="hero__img"
+            src="https://i.pinimg.com/originals/d2/73/84/d2738480aa3b3d960f3041110f72287c.jpg"
+            alt=""
+          />
+        </div>
+        <p class="hero__img-description">
+          Myślałem <br />że jestem taki w kodowaniu,<br />
+          zanim dołączyłem do kursu
+        </p>
+        <div class="hero__text-container">
+          <h1 class="hero__heading1">Kamil Szewczyk</h1>
+          <h2 class="hero__heading2">Ten Co Zabił <em>Smoka</em></h2>
+          <p class="hero__paragraph">
+            a zrobił to tak dobrze że siedzi w Norwegi i poluje na
+            <span class="hero__changable-elem">trolle</span>
+          </p>
+          <div class="hero__hero-buttons">
+            <button class="hero__button hero__button-truth">
+              Zobacz jak było naprawdę
+            </button>
+            <button class="hero__button hero__button-victim">
+              Na co naprawdę poluję
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="tabell" class="drink-list">
+        <table class="drink-list__tabell">
+          <caption class="drink-list__name">
+            Co piję po pokonaniu potworów
+          </caption>
+          <thead>
+            <tr class="drink-list__table-row">
+              <th
+                class="drink-list__table-cell drink-list__table-header"
+                scope="col"
+              >
+                Nazwa
+              </th>
+              <th
+                class="drink-list__table-cell drink-list__table-header"
+                scope="col"
+              >
+                Bazowy Alkohol
+              </th>
+              <th
+                class="drink-list__table-cell drink-list__table-header"
+                scope="col"
+              >
+                Typ
+              </th>
+              <th
+                class="drink-list__table-cell drink-list__table-header"
+                scope="col"
+              >
+                Szkło
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="drink-list__table-row">
+              <th
+                class="drink-list__table-cell drink-list__table-header"
+                scope="row"
+              >
+                Negroni
+              </th>
+              <td class="drink-list__table-cell">Gin</td>
+              <td class="drink-list__table-cell">Aperitif</td>
+              <td class="drink-list__table-cell">Rocks</td>
+            </tr>
+            <tr class="drink-list__table-row">
+              <th
+                class="drink-list__table-cell drink-list__table-header"
+                scope="row"
+              >
+                Daiquiri
+              </th>
+              <td class="drink-list__table-cell">Rum</td>
+              <td class="drink-list__table-cell">Kwaśny</td>
+              <td class="drink-list__table-cell">Coupette</td>
+            </tr>
+            <tr class="drink-list__table-row">
+              <th
+                class="drink-list__table-cell drink-list__table-header"
+                scope="row"
+              >
+                Whiskey Sour
+              </th>
+              <td class="drink-list__table-cell">Bourbon</td>
+              <td class="drink-list__table-cell">Kwaśny</td>
+              <td class="drink-list__table-cell">Rocks</td>
+            </tr>
+            <tr class="drink-list__table-row">
+              <th
+                class="drink-list__table-cell drink-list__table-header"
+                scope="row"
+              >
+                Espresso Martini
+              </th>
+              <td class="drink-list__table-cell">Wódka</td>
+              <td class="drink-list__table-cell">Deserowy</td>
+              <td class="drink-list__table-cell">Coupette</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="drink-list__change">Co by tu jeszcze...</button>
+      </section>
+      <footer id="contact" class="footer">
+        <a
+          rel="noreferrer noopener"
+          href="https://www.facebook.com/kamil.szewczyk.961"
+          target="_blank"
+          class="footer__link"
+        >
+          Developed by Kamil Szewczyk
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
