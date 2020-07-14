@@ -1,26 +1,30 @@
-let truth = document.querySelector(".hero__button-truth");
-let victim = document.querySelector(".hero__button-victim");
-let change = document.querySelector(".hero__changable-elem");
-let tabell = document.querySelector(".drink-list__tabell");
-let changeTabell = document.querySelector(".drink-list__change");
+{
+  const welcomeFunction = () => {
+    console.log("Witam wszystkich adeptów tajemnej sztuki klepania kodu!");
+  };
 
-console.log("Witam wszystkich adeptów tajemnej sztuki klepania kodu!");
+  const truth = document.querySelector(".hero__button-truth");
+  const victim = document.querySelector(".hero__button-victim");
+  const changeTabell = document.querySelector(".drink-list__change");
+  const change = document.querySelector(".hero__changable-elem");
 
-truth.addEventListener("click", () => {
-  document.querySelector(".hero__img").src =
-    "https://sunflowereigo.files.wordpress.com/2013/05/01-the-blue-baby-dragon-story-dragon-300.jpg?w=584";
-  document.querySelector(".hero__img-description").textContent =
-    "A tak wyglądam naprawdę";
-});
+  const changingPicture = () => {
+    document.querySelector(".hero__img").src =
+      "https://sunflowereigo.files.wordpress.com/2013/05/01-the-blue-baby-dragon-story-dragon-300.jpg?w=584";
+    document.querySelector(".hero__img-description").textContent =
+      "A tak wyglądam naprawdę";
+  };
 
-victim.addEventListener("click", () => {
-  change.classList.add("hero__changable-elem--true");
-  change.innerHTML = "<br>pozycję Front-End Dev!!!";
-});
+  const changingStatement = () => {
+    change.classList.add("hero__changable-elem--true");
+    change.innerHTML = "<br>pozycję Front-End Dev!!!";
+  };
 
-changeTabell.addEventListener("click", () => {
-  if (change.textContent === "trolle") {
-    tabell.innerHTML = `<caption class="drink-list__name">Co piję po pokonaniu potworów</caption>
+  const changingTabell = () => {
+    const tabell = document.querySelector(".drink-list__tabell");
+
+    if (change.textContent === "trolle") {
+      tabell.innerHTML = `<caption class="drink-list__name">Co piję po pokonaniu potworów</caption>
         <thead>
           <tr class="drink-list__table-row">
             <th class="drink-list__table-cell drink-list__table-header" scope="col">Nazwa</th>
@@ -55,8 +59,8 @@ changeTabell.addEventListener("click", () => {
             <td class="drink-list__table-cell">Coupette</td>
           </tr>
         </tbody>`;
-  } else {
-    tabell.innerHTML = `<caption class="drink-list__name">Czego się uczę</caption>
+    } else {
+      tabell.innerHTML = `<caption class="drink-list__name">Czego się uczę</caption>
         <thead>
           <tr class="drink-list__table-row">
             <th class="drink-list__table-cell drink-list__table-header" scope="col">Nazwa technologii</th>
@@ -96,6 +100,13 @@ changeTabell.addEventListener("click", () => {
             <td class="drink-list__table-cell">Średni</td>
           </tr>
         </tbody>`;
-    document.querySelector(".drink-list").style.height = "700px";
-  }
-});
+      document.querySelector(".drink-list").style.height = "700px";
+    }
+  };
+
+  truth.addEventListener("click", changingPicture);
+
+  victim.addEventListener("click", changingStatement);
+
+  changeTabell.addEventListener("click", changingTabell);
+}
